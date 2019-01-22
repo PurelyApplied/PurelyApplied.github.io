@@ -1,0 +1,270 @@
+% Copyright (C) 2004-* Jason R. Blevins
+% Edit and reproduction - Patrick S. Rhomberg, 2016-2017
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely.  No attribution is
+% required in any resulting documents.  I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+%
+% Edit: the URL was lacking in the .tex I downloaded.
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage{textcomp} % \texttildelow
+\newcommand\ttt\texttt
+\newcommand{\jobEntryTitle}[1]{\item #1}
+\newcommand{\jobEntryEntry}[2]{\par\vspace{-.2em}\quad \textit{#1}, #2}
+\newcommand{\jobEntry}[3]{\jobEntryTitle{#1}\jobEntryEntry{#2}{#3}}
+
+
+% Set your name here
+\def\name{Dr. Patrick S. Rhomberg}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {mathematics, computer science, modeling, simulation,
+    epidemiology, applied mathematics},
+  pdftitle = {\name: R\'esum\'e},
+  pdfsubject = {R\'esum\'e},
+  pdfpagemode = UseNone
+}
+
+\usepackage{geometry}
+\geometry{
+  body={6.5in, 9.0in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\itemsep}{0.25em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0.25em}
+  }
+}{
+  \end{list}
+}
+
+%%%%%%%%%%%%%%%
+%% Begin Doc %%
+%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+\bigskip
+
+\input{contact_header}
+%%%%%%%%%%%%%%%%%%%%
+
+%\section*{Education}
+%\begin{itemize}
+%  \item Ph.D. Applied Mathematics, The University of Iowa, expected
+%    May 2017.
+%  \item Master of Computer Science, The University of Iowa, to be awarded
+%    Dec. 2016.
+%  \item B.A. Mathematics, \textit{Magna Cum Laude}, Wartburg College,
+%    2007.
+%  \item Budapest Semesters in Mathematics, Spring 2007.
+%\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%
+
+
+\section*{Work Experience}
+\subsection*{Summary}
+\begin{itemize}
+  \jobEntry{Pivotal Software, Inc.}{Software Engineer}{January 2017 -- present}
+  \jobEntry{The University of Iowa, Department of Computer Science}{Teaching Assistant}{September 2014 -- May 2016}
+  \jobEntry{Cornell College, Department of Mathematics and Statistics}{Adjunct Professor}{September 30 2013 -- December 12 2013}
+  \jobEntryTitle{The University of Iowa, Department of Mathematics}
+  \jobEntryEntry{Assistant in Instruction}{September 2013 -- December 2013}
+  \jobEntryEntry{Teaching Assistant}{August 2007 -- May 2013}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Pivotal Software Inc.}
+\textit{Software Engineer}, Jan 2017 -- \verb!$(date +"%b %Y")!
+\begin{itemize}
+\item Held positions on the Toolsmith, M\&M, and Improved Build teams
+\begin{itemize}
+\item Toolsmith reponsibilities:
+\begin{itemize}
+\item Maintain continuous integration pipelines and AWS / GCP infrastructure
+\item Provide tools to developes for rapid iteration.
+\end{itemize}
+\item Monitoring \& Management reponsibilities:
+\begin{itemize}
+\item Owned user-facing components, such as the command-line tool \verb!gfsh!, configuration APIs, JMX beans.
+\item Owned \verb!SecurityManager! interface and enforcement of security throughout the product.
+\end{itemize}
+\item Improved Build responsibilities:
+\begin{itemize}
+\item Reduced \verb!precheckin! testing suite execution time from 3 hours to \~45 minutes.
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsection*{Teaching Highlights}
+\begin{itemize}
+\item Teaching Assistant for Large Data Analysis (Spring `16)
+\item Experience teaching Python (Fall `14 - Fall `15)
+\item Adjunct for 4-week, intensive study courses (Cornell, Fall `13)
+\item Lecturer for {\em Teaching with Technology} course (Spring `12)
+\item Detailed teaching history available at
+% TODO: Dead
+  \url{cs.uiowa.edu/~prhomber/teaching.pdf}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%
+
+\section*{Fields of Interest}
+\begin{itemize}
+\item Mathematical Modeling
+\item Simulation Modeling
+\item Epidemiology
+\item Network Diffusion
+\item Parallelization
+\item Optimization / Operations Research
+\end{itemize}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%
+\section*{A Summary of Me as a Developer}
+
+\subsection*{Language and Tool proficiencies}
+\begin{itemize}
+  \item Fluent and well-spoken:
+  \begin{itemize}
+    \item Java JDK 8
+    \item Python (both 2 and 3, with \ttt{python3} preferred) % , including the standard lib, as well as \ttt{numpy}, \ttt{pandas}, \ttt{matplotlib}, et al
+    \item The JetBrains family at large, but predominantly IntelliJ and PyCharm, as expected from the above
+    \item The Gradle build tool
+    \item \ttt{git}, because of course \ttt{git}
+    \item Concourse continuous integration
+    \item Linux (preference for Xubuntu).  \ttt{emacs} forever.
+    \item Concurrency in design and practice, continuous integration
+  \end{itemize}
+  %
+  \item Conversational:
+  \begin{itemize}
+    \item Java JDK 11, Jigsaw modules
+    \item AWS and GCP, predominantly as vehicles for continuous integration testing.
+    \item \ttt{vim}, because as much as I prefer \ttt{emacs}, I'm not a zealot and will use the tools available to me.
+  \end{itemize}
+  %
+  \item Out of practice but happy to relearn:
+  \begin{itemize}
+    \item C / C++, Perl
+  \end{itemize}
+  %
+  \item Neophyte:
+  \begin{itemize}
+    \item R, Go, Matlab, Gnuplot
+  \end{itemize}
+\end{itemize}
+
+\subsection*{Strong opinions, loosely held}
+\begin{itemize}
+  \item A problem does not need to become costly before its solution has value.
+  \item A product withers on the vine when its build system is broken.  A responsible developer know how it works.  An excellent developer improves it.
+  \item Tests form the contract of permissible product behavior.  Product confidence cannot exist without test confidence.
+  \item A responsible developer seeks out the full usefulness of their tools.  (Your IDE can do that for you.  Let it.)
+  \item Agile has some good ideas, but it has bad ones, too.  If you're always pivoting, you're not finishing your epics.  Building around individuals isn't scalable.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%
+
+\section*{Research, Presentations, and Academic Interests}
+\begin{itemize}
+\item Slowly working through the \href{https://projecteuler.net/}{Project Euler} problem sets, since July 2018.
+\begin{itemize}
+\item Solutions avaialble on GitHub upon request, but private in accordance with the project's wishes.
+\end{itemize}
+\item
+  Doctoral thesis, accepted July 2017:
+  \href{https://ir.uiowa.edu/etd/5831/}
+    {\em On the Scalable Parallelization of Network Diffusion Models}
+\item
+    % TODO: dead links
+  \href{http://www.math.uiowa.edu/~prhomber/Rhomberg-E3-ModelComparison.pdf}
+    {Comparing Agent-Based and Continuous Compartmental Epidemiology Models}
+  \begin{itemize}
+  \item Epidemics$^3$,
+    Boston, MA, November, 2011.
+  \end{itemize}
+\item
+  \href{http://www.math.uiowa.edu/~prhomber/beamer.pdf}
+    {Good Looking Mathematics: A Discussion of Mathematical Modeling}
+  \begin{itemize}
+  \item  Wartburg College, Waverly IA, April, 2013.
+  \end{itemize}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Current Work}
+\begin{itemize}
+\item Improving and expanding my Reddit bot \href{
+  https://www.reddit.com/user/roll_one_for_me }{
+  \ttt{/u/roll\_one\_for\_me}}.
+\item Investigating matchmaking strategies for competitive gaming, as approached by network diffusion.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%
+
+\section*{Honors, Awards, and Other Points of Interest}
+\begin{itemize}
+\item Recipient of The University of Iowa AMCS Summer Research
+  Fellowship \par ~ to the maximum allowance of six years: 2007-2012
+\item Familiarity with machine learning and neural networks.
+\item Familiarity with Django.
+\item Experienced using \ttt{git} for version control, \par ~ \ttt{bugs everywhere}
+  for issue tracking, \par ~ and \ttt{emacs} for development.
+\item Uses Linux (specifically Xubuntu) as primary working environment.
+\item Contributor to the Boost Parallel Graph Library.
+\item Author of \href{https://www.reddit.com/user/roll_one_for_me}{
+  \ttt{/u/roll\_one\_for\_me}}, table-roller for /r/DnDBehindTheScreen and
+  related subreddits.
+%% \item Diamond Tier in the fighting game Brawlhalla.
+%%   \begin{itemize}
+%%     \item Season 0: elo rating ~2150, ranked top 100 in US servers.
+%%     \item Season 1: peak elo rating 2316, peak ranking 27 on US-East /
+%%       72 globally.
+%%     \item Season 2: current peak elo rating 2025, peak ranking in top
+%%       ~200 globally.
+%%   \end{itemize}
+\end{itemize}
+
+%\section*{References}
+%\begin{itemize}
+%\item Dr. Jason Alan Fries 
+%?\item Dr. Alberto Segre
+%?\item Dr. Brian Birgen
+%?\item Amanda
+%\end{itemize}
+
+% Footer
+\vfill
+\begin{center}
+  \begin{small}
+    Last updated: \today
+  \end{small}
+\end{center}
+\end{document}
