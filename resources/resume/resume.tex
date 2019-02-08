@@ -20,6 +20,7 @@
 % Set your name here
 \def\name{Dr. Patrick S. Rhomberg}
 
+\usepackage[normalem]{ulem}  %strikeout
 \usepackage{hyperref}
 \hypersetup{
   colorlinks = true,
@@ -70,21 +71,6 @@
 \bigskip
 
 \input{contact_header}
-%%%%%%%%%%%%%%%%%%%%
-
-%\section*{Education}
-%\begin{itemize}
-%  \item Ph.D. Applied Mathematics, The University of Iowa, expected
-%    May 2017.
-%  \item Master of Computer Science, The University of Iowa, to be awarded
-%    Dec. 2016.
-%  \item B.A. Mathematics, \textit{Magna Cum Laude}, Wartburg College,
-%    2007.
-%  \item Budapest Semesters in Mathematics, Spring 2007.
-%\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%
-
 
 \section*{Work Experience}
 \subsection*{Summary}
@@ -102,7 +88,7 @@
 \subsection*{Pivotal Software Inc.}
 \textit{Software Engineer}, Jan 2017 -- \verb!$(date +"%b %Y")!
 \begin{itemize}
-  \item Held positions on the Toolsmith, M\&M, and Improved Build teams
+  \item Held positions on the Toolsmith, M\&M, and Geode-Core teams
   \begin{itemize}
     \item Toolsmith reponsibilities:
     \begin{itemize}
@@ -117,6 +103,7 @@
     \item Improved Build responsibilities:
     \begin{itemize}
       \item Reduced \verb!precheckin! testing suite execution time from 3 hours to \~45 minutes.
+      \item Redesigned the GemFire build from the ground up to respect modularity, some other reasons.
     \end{itemize}
   \end{itemize}
 \end{itemize}
@@ -125,22 +112,22 @@
 \begin{itemize}
   \item Teaching Assistant for Large Data Analysis (Spring `16)
   \item Experience teaching Python (Fall `14 - Fall `15)
-  \item Adjunct for 4-week, intensive study courses (Cornell, Fall `13)
+  \item Adjunct for three terms, each a 4-week, intensive study courses (Cornell, Fall `13)
   \item Lecturer for {\em Teaching with Technology} course (Spring `12)
-  \item Detailed teaching history available at
-    \url{https://purelyapplied.github.io/resources/resume/teaching.pdf}
+  \item Detailed teaching history available at: \\
+   \phantom{quad} \url{home.patrhom.com/resources/resume/teaching.pdf}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%
 
-\section*{Fields of Interest}
+\section*{Academic Interests}
 \begin{itemize}
   \item Mathematical Modeling
   \item Simulation Modeling
-  \item Epidemiology
   \item Network Diffusion
   \item Parallelization
   \item Optimization / Operations Research
+  \item Player Ranking and Matchmaking
 \end{itemize}
 
 \newpage
@@ -148,24 +135,27 @@
 %%%%%%%%%%%%%%%%%%%%
 \section*{A Summary of Me as a Developer}
 
+I'm a polyglot.  I love learning and delight in having confience that I've chosen the right tool for a given job.
+
 \subsection*{Language and Tool proficiencies}
 \begin{itemize}
   \item Fluent and well-spoken:
   \begin{itemize}
     \item Java JDK 8
-    \item Python (both 2 and 3, with \ttt{python3} preferred) % , including the standard lib, as well as \ttt{numpy}, \ttt{pandas}, \ttt{matplotlib}, et al
-    \item The JetBrains family at large, but predominantly IntelliJ and PyCharm, as expected from the above
+    \item Python (both 2 and 3, with \ttt{python3} preferred)
     \item The Gradle build tool
     \item \ttt{git}, because of course \ttt{git}
-    \item Concourse continuous integration
-    \item Linux (preference for Xubuntu).  \ttt{emacs} forever.
-    \item Concurrency in design and practice, continuous integration
+    \item Likewise Linux, because of course.
+    \item \ttt{emacs} forever.
+    \item Concourse continuous integration, and consequently also YAML and Jinja2.
+    \item The JetBrains family at large, but predominantly IntelliJ and PyCharm, as one might expected from the above
   \end{itemize}
   %
   \item Conversational:
   \begin{itemize}
-    \item Java JDK 11, Jigsaw modules
-    \item AWS and GCP, predominantly as vehicles for continuous integration testing.
+    \item Java JDK 11 and Jigsaw modules.
+    \item Docker.  Containers are so hot right now.  Also they make throwing something onto GCP trivially easy.
+    \item AWS and GCP, predominantly as vehicles for continuous integration testing, as well as personal project hosting.
     \item \ttt{vim}, because as much as I prefer \ttt{emacs}, I'm not a zealot and will use the tools available to me.
   \end{itemize}
   %
@@ -180,7 +170,7 @@
   \end{itemize}
 \end{itemize}
 
-\subsection*{Strong opinions, loosely held}
+\subsection*{Strong opinions, {weakly} held}
 \begin{itemize}
   \item A problem does not need to become costly before its solution has value.
   \item A product withers on the vine when its build system is broken.  A responsible developer know how it works.  An excellent developer improves it.
@@ -188,59 +178,16 @@
   \item A responsible developer seeks out the full usefulness of their tools.  (Your IDE can do that for you.  Let it.)
   \item Agile has some good ideas, but it has bad ones, too.  If you're always pivoting, you're not finishing your epics.  Building around individuals isn't scalable.
 \end{itemize}
-%%%%%%%%%%%%%%%%%%%%
-
-\section*{Research, Presentations, and Academic Interests}
-\begin{itemize}
-  \item Slowly working through the \href{https://projecteuler.net/}{Project Euler} problem sets, since July 2018.
-\begin{itemize}
-  \item Solutions avaialble on GitHub upon request, but private in accordance with the project's wishes.
-\end{itemize}
-\item
-  Doctoral thesis, accepted July 2017:
-  \href{https://ir.uiowa.edu/etd/5831/}
-    {\em On the Scalable Parallelization of Network Diffusion Models}
-\item
-    % TODO: dead links
-  \href{http://www.math.uiowa.edu/~prhomber/Rhomberg-E3-ModelComparison.pdf}
-    {Comparing Agent-Based and Continuous Compartmental Epidemiology Models}
-  \begin{itemize}
-  \item Epidemics$^3$,
-    Boston, MA, November, 2011.
-  \end{itemize}
-\item
-  \href{http://www.math.uiowa.edu/~prhomber/beamer.pdf}
-    {Good Looking Mathematics: A Discussion of Mathematical Modeling}
-  \begin{itemize}
-  \item  Wartburg College, Waverly IA, April, 2013.
-  \end{itemize}
-\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%
 
-\subsection*{Current Work}
+\section*{Other Points of Interest}
 \begin{itemize}
-\item Improving and expanding my Reddit bot \href{
-  https://www.reddit.com/user/roll_one_for_me }{
-  \ttt{/u/roll\_one\_for\_me}}.
-\item Investigating matchmaking strategies for competitive gaming, as approached by network diffusion.
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%
-
-\section*{Honors, Awards, and Other Points of Interest}
-\begin{itemize}
-\item Recipient of The University of Iowa AMCS Summer Research
-  Fellowship \par ~ to the maximum allowance of six years: 2007-2012
-\item Familiarity with machine learning and neural networks.
 \item Author of \href{https://www.reddit.com/user/roll_one_for_me}{
   \ttt{/u/roll\_one\_for\_me}}, table-roller for /r/DnDBehindTheScreen and
-  related subreddits.
-\end{itemize}
-
-\section*{Personal References}
-\begin{itemize}
-  \item Michael ``Sarge'' Dodge, friend and former coding manager, 123-456-7890
+  related subreddits.  The bot is GCP-hosted and deployed via Docker.
+\item Doctoral thesis, titled {\em On the Scalable Parallelization of Network Diffusion Models}, is available
+  at the University of Iowa's Institutional Repository:  \url{https://ir.uiowa.edu/etd/5831/}
 \end{itemize}
 
 % Footer
