@@ -16,7 +16,6 @@
 \newcommand{\jobEntryEntry}[2]{\par\vspace{-.2em}\quad \textit{#1}, #2}
 \newcommand{\jobEntry}[3]{\jobEntryTitle{#1}\jobEntryEntry{#2}{#3}}
 
-
 % Set your name here
 \def\name{Dr. Patrick S. Rhomberg}
 
@@ -26,8 +25,7 @@
   colorlinks = true,
   urlcolor = blue,
   pdfauthor = {\name},
-  pdfkeywords = {mathematics, computer science, modeling, simulation,
-    epidemiology, applied mathematics},
+  pdfkeywords = {mathematics, computer science, modeling, simulation, epidemiology, applied mathematics},
   pdftitle = {\name: R\'esum\'e},
   pdfsubject = {R\'esum\'e},
   pdfpagemode = UseNone
@@ -72,63 +70,65 @@
 
 \input{contact_header}
 
-\section*{Work Experience}
-\subsection*{Summary}
-\begin{itemize}
-  \jobEntry{Pivotal Software, Inc.}{Software Engineer}{January 2017 -- present}
-  \jobEntry{The University of Iowa, Department of Computer Science}{Teaching Assistant}{September 2014 -- May 2016}
-  \jobEntry{Cornell College, Department of Mathematics and Statistics}{Adjunct Professor}{September 30 2013 -- December 12 2013}
-  \jobEntryTitle{The University of Iowa, Department of Mathematics}
-  \jobEntryEntry{Assistant in Instruction}{September 2013 -- December 2013}
-  \jobEntryEntry{Teaching Assistant}{August 2007 -- May 2013}
-\end{itemize}
+\newcommand{\thinNewLineWithQuad}{\par\vspace{-.2em}\quad}
+
+\newcommand{\jobtitle}[1]{\textbf{#1},}
+\newcommand{\timeAtJob}[1]{{#1}}
+\newcommand{\workplace}[1]{\thinNewLineWithQuad{#1}}
+
 
 %%%%%%%%%%%%%%%%%%%%
-
+\section*{Experience}
 \subsection*{Pivotal Software Inc.}
-\textit{Software Engineer}, Jan 2017 -- \verb!$(date +"%b %Y")!
 \begin{itemize}
-  \item Held positions on the Toolsmith, M\&M, and Geode-Core teams
-  \begin{itemize}
-    \item Toolsmith reponsibilities:
-    \begin{itemize}
-      \item Maintain continuous integration pipelines and AWS / GCP infrastructure
-      \item Provide tools to developes for rapid iteration.
-    \end{itemize}
-    \item Monitoring \& Management reponsibilities:
-    \begin{itemize}
-      \item Owned user-facing components, such as the command-line tool \verb!gfsh!, configuration APIs, JMX beans.
-      \item Owned \verb!SecurityManager! interface and enforcement of security throughout the product.
-    \end{itemize}
-    \item Improved Build responsibilities:
-    \begin{itemize}
-      \item Reduced \verb!precheckin! testing suite execution time from 3 hours to \~45 minutes.
-      \item Redesigned the GemFire build from the ground up to respect modularity, some other reasons.
-    \end{itemize}
-  \end{itemize}
+  \item \jobtitle{Software Engineer} {Jan 2017 -- \verb!$(date +"%b %Y")!}
+  \item Held positions on the Toolsmith, Monitoring \& Management, and the ambiguously-named Core teams.
+  \item \quad As a Toolsmith, developed and maintained continuous-integration infrastructure, as well as assisted in migration of that infrastructure from AWS to GCP.
+  \item \quad On M\&M, maintained command-line tool \verb!gfsh!, expanded configuration API, and ensured security throughout the cluster.
+  \item \quad As a part of Core, worked to parallelize \verb!precheckin! testing suite, reducing execution time $\sim$3 hours to $\sim$45 minutes.
+  \item \quad Also as part of Core, redesigned the GemFire build from the ground up to respect modularity, allow build parallelization and incrementalization, and cleanly delineate ownership and testing boundaries between supporting projects.
 \end{itemize}
 
-\subsection*{Teaching Highlights}
+\subsection*{A previous life as an academic}
 \begin{itemize}
-  \item Teaching Assistant for Large Data Analysis (Spring `16)
-  \item Experience teaching Python (Fall `14 - Fall `15)
-  \item Adjunct for three terms, each a 4-week, intensive study courses (Cornell, Fall `13)
-  \item Lecturer for {\em Teaching with Technology} course (Spring `12)
-  \item Detailed teaching history available at: \\
-   \phantom{quad} \url{home.patrhom.com/resources/resume/teaching.pdf}
+  \item
+  \jobtitle{Teaching Assistant}
+  \timeAtJob{September 2014 -- May 2016}
+  \workplace{The University of Iowa, Department of Computer Science}
+
+  \item
+  \jobtitle{Adjunct Professor}
+  \timeAtJob{September 30 2013 -- December 12 2013}
+  \workplace{Cornell College, Department of Mathematics and Statistics}
+
+  \item
+  \jobtitle{Assistant in Instruction}
+  \timeAtJob{September 2013 -- December 2013}
+  \workplace{The University of Iowa, Department of Mathematics}
+
+  \item
+  \jobtitle{Teaching Assistant}
+  \timeAtJob{August 2007 -- May 2013}
+  \workplace{The University of Iowa, Department of Mathematics}
+%  \item Teaching Assistant for Large Data Analysis (Spring `16)
+%  \item Experience teaching Python (Fall `14 - Fall `15)
+%  \item Adjunct for three terms, each a 4-week, intensive study courses (Cornell, Fall `13)
+
+  \item Complete teaching history available at: \url{home.patrhom.com/resources/resume/teaching.pdf}
+\end{itemize}
+
+\subsection*{Other notable bits}
+\begin{itemize}
+  \item I am the author of \href{https://www.reddit.com/user/roll_one_for_me}{\ttt{/u/roll\_one\_for\_me}},
+    username-summoned table-roller for /r/DnDBehindTheScreen andrelated subreddits.
+    The bot is GCP-hosted, deployed via Docker,
+    and public \href{https://github.com/PurelyApplied/roll_one_for_me/}{on GitHub}
+
+  \item My doctoral thesis, {\em On the Scalable Parallelization of Network Diffusion Models},
+    is available at the University of Iowa's Institutional Repository:  \url{https://ir.uiowa.edu/etd/5831/}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%
-
-\section*{Academic Interests}
-\begin{itemize}
-  \item Mathematical Modeling
-  \item Simulation Modeling
-  \item Network Diffusion
-  \item Parallelization
-  \item Optimization / Operations Research
-  \item Player Ranking and Matchmaking
-\end{itemize}
 
 \newpage
 
@@ -137,58 +137,65 @@
 
 I'm a polyglot.  I love learning and delight in having confience that I've chosen the right tool for a given job.
 
-\subsection*{Language and Tool proficiencies}
+\subsection*{Language and Tool Proficiencies}
 \begin{itemize}
   \item Fluent and well-spoken:
   \begin{itemize}
     \item Java JDK 8
-    \item Python (both 2 and 3, with \ttt{python3} preferred)
+    \item Python (both 2 and 3)
     \item The Gradle build tool
     \item \ttt{git}, because of course \ttt{git}
-    \item Likewise Linux, because of course.
-    \item \ttt{emacs} forever.
-    \item Concourse continuous integration, and consequently also YAML and Jinja2.
+    \item Linux and \ttt{bash}
+    \item \ttt{emacs}
+    \item Concourse continuous integration, and as a consequence, also Jinja2
     \item The JetBrains family at large, but predominantly IntelliJ and PyCharm, as one might expected from the above
   \end{itemize}
   %
   \item Conversational:
   \begin{itemize}
     \item Java JDK 11 and Jigsaw modules.
-    \item Docker.  Containers are so hot right now.  Also they make throwing something onto GCP trivially easy.
-    \item AWS and GCP, predominantly as vehicles for continuous integration testing, as well as personal project hosting.
+    \item Docker.  So hot right now.
+    \item AWS and GCP, predominantly as vehicles for previously mentioned continuous integration and personal projects.
     \item \ttt{vim}, because as much as I prefer \ttt{emacs}, I'm not a zealot and will use the tools available to me.
   \end{itemize}
   %
   \item Out of practice but happy to relearn:
   \begin{itemize}
-    \item C / C++, Perl
+    \item C / C++, Perl, Matlab, Gnuplot
   \end{itemize}
   %
   \item Neophyte:
   \begin{itemize}
-    \item R, Go, Matlab, Gnuplot, Django
+    \item R, Go, Django
   \end{itemize}
+  \item And probably some others, because who can really enumerate everything they know?
 \end{itemize}
 
-\subsection*{Strong opinions, {weakly} held}
+\newcommand{\opinionsPar}{\par\vspace{-.3em}\quad}
+
+\subsection*{Strong opinions, held}
 \begin{itemize}
   \item A problem does not need to become costly before its solution has value.
-  \item A product withers on the vine when its build system is broken.  A responsible developer know how it works.  An excellent developer improves it.
-  \item Tests form the contract of permissible product behavior.  Product confidence cannot exist without test confidence.
-  \item A responsible developer seeks out the full usefulness of their tools.  (Your IDE can do that for you.  Let it.)
-  \item Agile has some good ideas, but it has bad ones, too.  If you're always pivoting, you're not finishing your epics.  Building around individuals isn't scalable.
+  \item A product withers on the vine when its build system is broken.\opinionsPar
+    A responsible developer know how it works.
+  \item Tests form the contract of permissible product behavior.\opinionsPar
+    Product confidence cannot exist without test confidence.
+  \item A responsible developer seeks out the full usefulness of their tools.\opinionsPar
+    Your IDE is there to help you, if you would only ask it.
+%  \item Agile has some good ideas, but it has bad ones, too.\opinionsPar
+%    If you're always pivoting, you're not driving your epic to completion.
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%
-
-\section*{Other Points of Interest}
-\begin{itemize}
-\item Author of \href{https://www.reddit.com/user/roll_one_for_me}{
-  \ttt{/u/roll\_one\_for\_me}}, table-roller for /r/DnDBehindTheScreen and
-  related subreddits.  The bot is GCP-hosted and deployed via Docker.
-\item Doctoral thesis, titled {\em On the Scalable Parallelization of Network Diffusion Models}, is available
-  at the University of Iowa's Institutional Repository:  \url{https://ir.uiowa.edu/etd/5831/}
-\end{itemize}
+%
+%\section*{Other Points of Interest}
+%\begin{itemize}
+%\item Author of \href{https://www.reddit.com/user/roll_one_for_me}{
+%  \ttt{/u/roll\_one\_for\_me}}, table-roller for /r/DnDBehindTheScreen and
+%  related subreddits.  The bot is GCP-hosted and deployed via Docker.
+%\item Doctoral thesis, titled {\em On the Scalable Parallelization of Network Diffusion Models}, is available
+%  at the University of Iowa's Institutional Repository:  \url{https://ir.uiowa.edu/etd/5831/}
+%\end{itemize}
 
 % Footer
 \vfill
