@@ -10,7 +10,6 @@
 % Edit: the URL was lacking in the .tex I downloaded.
 
 \documentclass[10pt,letterpaper]{article}
-\usepackage{textcomp} % \texttildelow
 \newcommand\ttt\texttt
 \newcommand{\jobEntryTitle}[1]{\item #1}
 \newcommand{\jobEntryEntry}[2]{\par\vspace{-.2em}\quad \textit{#1}, #2}
@@ -72,43 +71,52 @@
 
 \newcommand{\thinNewLineWithQuad}{\par\vspace{-.2em}\quad}
 
-\newcommand{\jobtitle}[1]{\textbf{#1},}
-\newcommand{\timeAtJob}[1]{{#1}}
+\newcommand{\jobtitle}[1]{\textbf{#1}}
+\newcommand{\timeAtJob}[1]{\hspace{\fill}{#1}}
 \newcommand{\workplace}[1]{\thinNewLineWithQuad{#1}}
 
 
 %%%%%%%%%%%%%%%%%%%%
-\section*{Experience}
-\subsection*{Pivotal Software Inc.}
+\subsection*{Developer experience}
 \begin{itemize}
-  \item \jobtitle{Software Engineer} {Jan 2017 -- \verb!$(date +"%b %Y")!}
-  \item Held positions on the Toolsmith, Monitoring \& Management, and the ambiguously-named Core teams.
-  \item \quad As a Toolsmith, developed and maintained continuous-integration infrastructure, as well as assisted in migration of that infrastructure from AWS to GCP.
-  \item \quad On M\&M, maintained command-line tool \verb!gfsh!, expanded configuration API, and ensured security throughout the cluster.
-  \item \quad As a part of Core, worked to parallelize \verb!precheckin! testing suite, reducing execution time $\sim$3 hours to $\sim$45 minutes.
-  \item \quad Also as part of Core, redesigned the GemFire build from the ground up to respect modularity, allow build parallelization and incrementalization, and cleanly delineate ownership and testing boundaries between supporting projects.
+  \item
+  \jobtitle{Software Engineer}
+  \hspace{\fill}{ {Jan 2017 -- \verb!NOW=$(date +"%b %Y")!} }
+  \workplace{Pivotal Software, Inc.}
+  \begin{itemize}
+  \vspace{.5em}
+  \item {\textbf{Highlights}}
+  \item\quad Developed and maintained continuous-integration infrastructure,\\
+    including migration of that infrastructure from AWS to GCP
+  \item\quad Expanded scope and granularity of security permissions for all cluster operations
+  \item\quad Parallelized \verb!precheckin! testing suite, reducing execution time $\sim$3 hours to $\sim$45 minutes
+  \item\quad Redesigned and rewrote GemFire's \ttt{gradle} build to respect modularity,\\
+    allow build parallelization and incrementalization,
+    and cleanly delineate ownership and testing boundaries between supporting projects,
+    all the while maintaining artifact expectation for downstream projects.
+  \end{itemize}
 \end{itemize}
 
 \subsection*{A previous life as an academic}
 \begin{itemize}
   \item
   \jobtitle{Teaching Assistant}
-  \timeAtJob{September 2014 -- May 2016}
+  \timeAtJob{Sept 2014 -- May 2016}
   \workplace{The University of Iowa, Department of Computer Science}
 
   \item
   \jobtitle{Adjunct Professor}
-  \timeAtJob{September 30 2013 -- December 12 2013}
+  \timeAtJob{Sept 2013 -- Dec 2013}
   \workplace{Cornell College, Department of Mathematics and Statistics}
 
   \item
   \jobtitle{Assistant in Instruction}
-  \timeAtJob{September 2013 -- December 2013}
+  \timeAtJob{Sept 2013 -- Dec 2013}
   \workplace{The University of Iowa, Department of Mathematics}
 
   \item
   \jobtitle{Teaching Assistant}
-  \timeAtJob{August 2007 -- May 2013}
+  \timeAtJob{Aug 2007 -- May 2013}
   \workplace{The University of Iowa, Department of Mathematics}
 %  \item Teaching Assistant for Large Data Analysis (Spring `16)
 %  \item Experience teaching Python (Fall `14 - Fall `15)
@@ -117,7 +125,7 @@
   \item Complete teaching history available at: \url{home.patrhom.com/resources/resume/teaching.pdf}
 \end{itemize}
 
-\subsection*{Other notable bits}
+\subsection*{Other notable work}
 \begin{itemize}
   \item I am the author of \href{https://www.reddit.com/user/roll_one_for_me}{\ttt{/u/roll\_one\_for\_me}},
     username-summoned table-roller for /r/DnDBehindTheScreen andrelated subreddits.
@@ -145,9 +153,8 @@ I'm a polyglot.  I love learning and delight in having confience that I've chose
     \item Python (both 2 and 3)
     \item The Gradle build tool
     \item \ttt{git}, because of course \ttt{git}
-    \item Linux and \ttt{bash}
-    \item \ttt{emacs}
-    \item Concourse continuous integration, and as a consequence, also Jinja2
+    \item Linux, \ttt{bash}, and \ttt{emacs}
+    \item Concourse continuous integration, and as a tangential consequence, Jinja2
     \item The JetBrains family at large, but predominantly IntelliJ and PyCharm, as one might expected from the above
   \end{itemize}
   %
@@ -156,7 +163,7 @@ I'm a polyglot.  I love learning and delight in having confience that I've chose
     \item Java JDK 11 and Jigsaw modules.
     \item Docker.  So hot right now.
     \item AWS and GCP, predominantly as vehicles for previously mentioned continuous integration and personal projects.
-    \item \ttt{vim}, because as much as I prefer \ttt{emacs}, I'm not a zealot and will use the tools available to me.
+    \item \ttt{vim}, because as much as I prefer \ttt{emacs}, I use the tools available to me.
   \end{itemize}
   %
   \item Out of practice but happy to relearn:
@@ -164,11 +171,11 @@ I'm a polyglot.  I love learning and delight in having confience that I've chose
     \item C / C++, Perl, Matlab, Gnuplot
   \end{itemize}
   %
-  \item Neophyte:
-  \begin{itemize}
-    \item R, Go, Django
-  \end{itemize}
-  \item And probably some others, because who can really enumerate everything they know?
+  % \item Neophyte:
+  % \begin{itemize}
+  %   \item R, Go, Django
+  % \end{itemize}
+  % \item And probably some others, because who can really enumerate everything they know?
 \end{itemize}
 
 \newcommand{\opinionsPar}{\par\vspace{-.3em}\quad}
@@ -179,9 +186,9 @@ I'm a polyglot.  I love learning and delight in having confience that I've chose
   \item A product withers on the vine when its build system is broken.\opinionsPar
     A responsible developer know how it works.
   \item Tests form the contract of permissible product behavior.\opinionsPar
-    Product confidence cannot exist without test confidence.
+    Product confidence necessitates test confidence.
   \item A responsible developer seeks out the full usefulness of their tools.\opinionsPar
-    Your IDE is there to help you, if you would only ask it.
+    Your IDE will help you if you learn how to ask it.
 %  \item Agile has some good ideas, but it has bad ones, too.\opinionsPar
 %    If you're always pivoting, you're not driving your epic to completion.
 \end{itemize}
