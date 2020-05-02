@@ -3,8 +3,8 @@ title: 𝄆 Cursive 𝄇
 email: root@patrhom.com
 description: >- # this means to ignore newlines until "baseurl:"
   Rhomberg's rambling rigmarole.
-baseurl: "/site"
-url: "https://purelyapplied.github.io/"
+baseurl: ""
+url: "http://purelyapplied.github.io/"
 #twitter_username: jekyllrb
 github_username:  PurelyApplied
 
