@@ -5,7 +5,7 @@ permalink: /about/
 ---
 *I'm Lord Howard Hurtz.  Who th'\<beep\>'re you?!*
 
-![The cave beard](/img/psr.jpg)
+![It was bright out](/assets/img/psr_reading.png)
   
 This is Patrick.
 
