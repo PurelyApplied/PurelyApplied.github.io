@@ -11,18 +11,36 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-title: 𝄆 Cursive 𝄇
-description: >- # this means to ignore newlines until "baseurl:"
-  Rhomberg's rambling rigmarole.
-#baseurl: "/site"
-#url: "https://purelyapplied.github.io/"
-#twitter_username: jekyllrb
-github_username:  PurelyApplied
-
-# Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+
+remote_theme: jekyll/minima
+
+# Minima config
+# See https://github.com/jekyll/minima/blob/master/_config.yml
+title: 𝄆 Cursive 𝄇
+author:
+  name: Patrick Rhomberg
+#  email: root &> patrhom.com
+description: A rambling rigmarole.
+#baseurl: "/site"
+#url: "https://purelyapplied.github.io/"
+
+minima:
+  date_format: "%Y-%m-%d"
+  social_links:
+    twitter: PurelyApplied
+    github: PurelyApplied
+    linkedin: patrick-rhomberg-9730249b
+  # skin options: classic, dark, solarized, solarized-dark
+  skin: solarized
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+  - about.md
+  - resume.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
