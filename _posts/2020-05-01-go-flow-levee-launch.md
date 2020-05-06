@@ -2,7 +2,7 @@
 layout: post
 title:  "I launched an analyzer"
 date:   2020-05-01 18:00:00 -0700
-categories: jekyll update
+categories: coding projects google
 ---
 
 So, [go-flow-levee](https://github.com/google/go-flow-levee) exists now.
