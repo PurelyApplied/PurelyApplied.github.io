@@ -18,4 +18,3 @@ I'd say I'm overdue to have started a blog, but I slightly suspect that blogs ar
 
 I'm probably going to use this space to talk a good bit about coding and metaprogramming tools.
 Won't that be jolly fun?
-
