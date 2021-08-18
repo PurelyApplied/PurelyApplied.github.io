@@ -1,0 +1,219 @@
+% Copyright (C) 2004-* Jason R. Blevins
+% Edit and reproduction - Patrick S. Rhomberg, 2016-2017
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely.  No attribution is
+% required in any resulting documents.  I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+%
+% Edit: the URL was lacking in the .tex I downloaded.
+
+\documentclass[10pt,letterpaper]{article}
+\newcommand\ttt\texttt
+\newcommand{\jobEntryTitle}[1]{\item #1}
+\newcommand{\jobEntryEntry}[2]{\par\vspace{-.2em}\quad \textit{#1}, #2}
+\newcommand{\jobEntry}[3]{\jobEntryTitle{#1}\jobEntryEntry{#2}{#3}}
+
+% Set your name here
+\def\name{Dr. Patrick S. Rhomberg}
+
+\usepackage[normalem]{ulem}  %strikeout
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {mathematics, computer science, modeling, simulation, epidemiology, applied mathematics},
+  pdftitle = {\name: R\'esum\'e},
+  pdfsubject = {R\'esum\'e},
+  pdfpagemode = UseNone
+}
+
+\usepackage{geometry}
+\geometry{
+  body={6.5in, 9.0in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\itemsep}{0.25em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0.25em}
+  }
+}{
+  \end{list}
+}
+
+%%%%%%%%%%%%%%%
+%% Begin Doc %%
+%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+\bigskip
+
+\input{contact_header}
+
+\newcommand{\thinNewLineWithQuad}{\par\vspace{-.2em}\quad}
+
+\newcommand{\jobtitle}[1]{\textbf{#1}}
+\newcommand{\timeAtJob}[1]{\hspace{\fill}{#1}}
+\newcommand{\workplace}[1]{\thinNewLineWithQuad{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%
+\section*{Developer Experience}
+\begin{itemize}
+  \item
+  \jobtitle{Software Engineer}
+  \hspace{\fill}{ {Jan 2017 -- \verb!NOW=$(date +"%b %Y")!} }
+  \workplace{Pivotal Software, Inc.}
+  \begin{itemize}
+  \vspace{.5em}
+  \item {\textbf{Highlights:}}
+  \item\quad Developed and maintained continuous-integration infrastructure,
+    including migration of that \\ infrastructure from AWS to GCP
+  \item\quad Expanded scope and improved granularity of security permissions for all cluster operations
+  % \item\quad Parallelized \verb!precheckin! testing suite, reducing execution time $\sim$3 hours to $\sim$45 minutes
+  \item\quad Redesigned and rewrote GemFire's \ttt{gradle} build to respect modularity,
+    with focus on build\\ parallelization and incrementalization,
+    clean delineation of code ownership and testing boundaries between supporting projects,
+    and maintaining artifact expectation for downstream projects.
+  \end{itemize}
+\end{itemize}
+
+\subsection*{A previous life as an academic}
+\begin{itemize}
+  \item
+  \jobtitle{Teaching Assistant}
+  \timeAtJob{Sept 2014 -- May 2016}
+  \workplace{The University of Iowa, Department of Computer Science}
+
+  \item
+  \jobtitle{Adjunct Professor}
+  \timeAtJob{Sept 2013 -- Dec 2013}
+  \workplace{Cornell College, Department of Mathematics and Statistics}
+
+  \item
+  \jobtitle{Assistant in Instruction}
+  \timeAtJob{Sept 2013 -- Dec 2013}
+  \workplace{The University of Iowa, Department of Mathematics}
+
+  \item
+  \jobtitle{Teaching Assistant}
+  \timeAtJob{Aug 2007 -- May 2013}
+  \workplace{The University of Iowa, Department of Mathematics}
+%  \item Teaching Assistant for Large Data Analysis (Spring `16)
+%  \item Experience teaching Python (Fall `14 - Fall `15)
+%  \item Adjunct for three terms, each a 4-week, intensive study courses (Cornell, Fall `13)
+
+  \item Complete teaching history available at: \url{http://home.patrhom.com/resources/resume/teaching.pdf}
+  
+  \item My current academic interests in discrete graph modeling as applied to player ranking and matchmaking.
+\end{itemize}
+
+\subsection*{Other important projects}
+\begin{itemize}
+  \item \textbf{I wrote a Reddit bot.} I am the author of \href{https://www.reddit.com/user/roll_one_for_me}{\ttt{/u/roll\_one\_for\_me}},
+    a table-rolling Reddit bot for \ttt{/r/DnDBehindTheScreen} and related subreddits.
+    The bot is GCP-hosted and deployed via Docker, with source available \href{https://github.com/PurelyApplied/roll_one_for_me/}{on GitHub}.
+
+  \item \textbf{I have had an abundance of education.} My doctoral thesis, {\em On the Scalable Parallelization of Network Diffusion Models},
+    is available at the University of Iowa's Institutional Repository:  \url{https://ir.uiowa.edu/etd/5831/}
+    
+ \item \textbf{I am a member of Apache Geode's Project Management Committee.}
+   I am a strong believer in the open source and am very happy that I have been able to contribute to the Apache Software Foundation.
+  
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%
+\section*{Developer Details}
+\subsection*{Languages Known}
+\begin{itemize}
+  \item \textbf{Fluent:}
+    Java JDK 8,
+    Python3
+  \item \textbf{Conversational:}
+    Java JDK 11 / Jigsaw modules,
+    Groovy,
+    Python2
+  \item \textbf{Out of practice but happy to relearn:}
+    C,
+    C++,
+    Perl,
+    Matlab,
+    Gnuplot
+\end{itemize}
+
+\subsection*{Tool Proficiencies}
+\begin{itemize}
+  \item \textbf{With expertise:}
+    \ttt{git},
+    \ttt{bash},
+    \ttt{emacs},
+    the Gradle build tool,
+    IntelliJ and PyCharm
+  \item \textbf{Proficient:} Docker (so hot right now),
+    AWS and GCP,
+    \LaTeX,
+    Concourse continuous integration,
+    Jinja2
+  \item \textbf{Half proficient:}
+    \ttt{vim}
+\end{itemize}
+
+\newcommand{\opinionsPar}{\par\vspace{-.3em}\quad}
+\newcommand{\gah}[1]{\ttt{#1}}
+\subsection*{Strong opinions, held}
+\begin{itemize}
+  \item A problem does not need to become costly before its solution has value.
+  \item A product withers on the vine when its build system is broken.\opinionsPar
+    A responsible developer know how it works.
+  \item Tests form the contract of permissible product behavior.\opinionsPar
+    Product confidence necessitates test confidence.
+  \item \gah{Perfect} is certainly the enemy \gah{good},\opinionsPar
+    but \gah{good enough for now} will be the death of them both.
+  \item A responsible developer seeks out the full usefulness of their tools.\opinionsPar
+    Your IDE will help you if you learn how to ask it.
+%  \item Agile has some good ideas, but it has bad ones, too.\opinionsPar
+%    If you're always pivoting, you're not driving your epic to completion.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%
+%
+%\section*{Other Points of Interest}
+%\begin{itemize}
+%\item Author of \href{https://www.reddit.com/user/roll_one_for_me}{
+%  \ttt{/u/roll\_one\_for\_me}}, table-roller for /r/DnDBehindTheScreen and
+%  related subreddits.  The bot is GCP-hosted and deployed via Docker.
+%\item Doctoral thesis, titled {\em On the Scalable Parallelization of Network Diffusion Models}, is available
+%  at the University of Iowa's Institutional Repository:  \url{https://ir.uiowa.edu/etd/5831/}
+%\end{itemize}
+
+% Footer
+\vfill
+\begin{center}
+  \begin{small}
+    Last updated: \today
+  \end{small}
+\end{center}
+\end{document}

@@ -18,7 +18,7 @@ Masters of every stripe imparted wisdom to apprentices and younger developers.
 Elágozás sighed in happy memory, staring off into the middle distance.
 A wistful smile played at her lips.
 
-"But what happened to the them, El?"
+"But what happened to them, El?"
 
 Returning her focus to the present, the smile fled.
 She waver her hand dismissively.
