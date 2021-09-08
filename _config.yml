@@ -40,8 +40,8 @@ minima:
 # this and add the path to the pages in order as they should show up
 header_pages:
   - about-me.md
-  - about-dockside.md
-  - resume.md
+#  - about-dockside.md
+#  - resume.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
