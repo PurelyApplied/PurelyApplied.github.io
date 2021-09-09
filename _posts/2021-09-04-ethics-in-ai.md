@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Waypoint Question Bucket: Ethics in AI and the Applied Sciences"
-date:   2021-09-07
+date:   2021-09-09
 categories: waypoint ethics
 ---
 
@@ -92,15 +92,16 @@ My perspective comes one step removed, from the applied sciences and big tech at
 When I took Numerical Analysis, my professor started the course saying
 "Nothing computed is correct.  The question is if are you acceptably wrong."
 Machines are imperfectly precise, and there comes a point where "small" turns into "pretty much zero."[^roundoff]
-Still, the statement stayed with me, and I try to carry it philosophically into most aspects of my life.
+Still, the statement stayed with me, and I try to carry it with me outside the classroom.
 
-Sometimes that's easy.
-Everyone knows the news is at best inaccurate, never correct in any full or complete way, but if you stick to primary and trustworthy secondary sources, you might be able to put bounds on how incorrect it is.
-Other cases are obvious, but hard to internalize.
-Most of our beliefs about other people are inherently incomplete, the rich inner world and all, but you can know another person to a reasonably accurate degree.
+Everyone knows the news is inaccurate, for instance.
+It's never correct in any full or complete way, but if you stick to primary and trustworthy secondary sources, you might be able to put bounds on how incorrect it can be.
+Most of our beliefs about other people are inherently incomplete, the rich inner world and all, but you can still know another person to a reasonably accurate degree.
 But take something more nebulous, like looking into the future.
-You have a vague sense that tomorrow will very likely be much like today, and you might have some knowledge of where you would like your life to be in a year, or three, five, ten.
-But that has a much wider uncertainty, much looser bounds on what it means to be, if not right in your prediction of the future, at least acceptably wrong.
+You have a vague sense that tomorrow will very likely be much like today, next week not _unlike_ this week.
+You might have some idea of where you would like your life to be in a year, or three, five, ten.
+But that has a much wider uncertainty cooked into it.
+There are much looser bounds on what it means to be, if not _right_ in your prediction of the future, at least acceptably wrong.
 
 -----
 
@@ -109,10 +110,10 @@ I posit that research in the applied sciences suffers a similar problem.
 There is very little ethical advancement of the sciences in the presence of injustice.[^injustice]
 
 In an unjust world, the roles of Deliverer and Destroyer become ambiguous.
-The obvious, low-hanging fruit is our medical system - patents and 100x markup on life-saving drugs.
+The obvious, low-hanging fruit is our broken and exploitative medical system.
+How can medical advancement be a true good when they are patented and priced at a 100x markup?
 Banting et al should have been saviors, but salvation for diabetics comes at a literal price.
-Babbage and Lovelace and Turing and all the rest revolutionized information, bootstrapping the technology that has allowed hate-groups to flourish anew.
-Even Jesus "did not come to bring peace, but a sword."[^sword]
+On the tech side, Babbage and Lovelace and Turing and all the rest revolutionized information, bootstrapping the technology that has allowed hate-groups to flourish anew.
 
 Suffice it to say: shit's fucked.
 
@@ -140,14 +141,15 @@ But I can't know that they didn't, not for sure.
 
 -----
 
-So, with the stage so set with several hundred words: what does it mean to me to be ethical in the applied sciences?
+So, what does it mean to me to be ethical as a toolmaker?
 
 Hell if I know.
 
 As hollow as it sounds, I think you do the best you can and keep your eyes open.
 You work to eliminate injustice, because that's the only way for altruistic work to persist unsullied.
-You make beneficial tools.
-You estimate how wrong you might be, and you keep an eye out to keep that estimate accurate.
+You make tools that you think will improve the world, even if only a bit, even if most tools pass by unnoticed.
+Sometimes you have to throw away work, because it would turn your tools into something you don't want them to be.
+You estimate how wrong you might be, and you keep an eye out to hold that estimate accurate.
 
 Then the news breaks, and it turns out you were off the mark.
 I don't know what I would do if I worked at Unity.
@@ -155,18 +157,22 @@ Their tools seem more tightly bundled than anything I've worked on, so the bound
 I don't blame people at Unity who stay, and I don't think ill of them.
 I don't blame the people at Unity who leave, and I respect their resolve.
 
-I think it is important to remember that tools are not inherently good or bad.
-They might tend one way or the other, but even swords can become ploughshares.
-A person must wield a tool for it to do anything.
+Tools are not inherently good or bad, even if ease of use might tilt in one direction or the other.
+I believe toolmakers _are_ morally obligated to consider how they'll be used.
+Carelessness is a malice of its own kind.
+Still, a person must wield a tool for it to do anything, and even swords can become ploughshares.
 
-Facial recognition is a useful tool for sorting photographs by who are in them.   It's also good for harassing protestors.
-Ad hoc message passing is a useful tool for helping someone find their lost Tile.  It's also a serious security and privacy concern.[^security]
-AI and machine learning are critical for verisimilitude in video games.  And in combat simulations.
+Ad hoc message passing is a useful tool for helping someone find their lost Tile.  It can also be a serious security and privacy concern.[^security]
+Facial recognition excels at refining targeted harassment of protestors.  It's also good for sorting your photograph collection by who are in them.
+AI and machine learning are critical for verisimilitude in video games and in research.  Also combat simulations and targeted advertising.
 
 You might wield a hammer as a weapon, even if it's meant to be a hammer.
 You might use a firearm for defense, but you can only do so by way of doing harm.
 I do not want the tools I make to do harm, and so I restrict myself to making hammers.
-If I ever find out that the hammers I've been making are the small kind used in revolvers, that will be a very sad day.
+I want to help build, not destroy.
+
+If I ever find out that the hammers I've been making are the small kind used in revolvers, that will be a very sad and confronting day.
+It might stop me making hammers.
 
 ----
 
@@ -181,4 +187,3 @@ If I ever find out that the hammers I've been making are the small kind used in 
 [^roundoff]: "Unit roundoff" or "machine epsilon" is typically around 16 digits past the decimal.
 [^security]: As an aside, there _are_ anonymous ways to do this.  I can't speak to whether or not Tile does them.  See [_Signal's_ contact discovery](https://signal.org/blog/private-contact-discovery/), for instance.  Or see [DP3T](https://en.wikipedia.org/wiki/Decentralized_Privacy-Preserving_Proximity_Tracing) for a primer on how spectacularly we failed at tracking COVID.  3b1b did [a video](https://youtu.be/D__UaR5MQao) about it.
 [^injustice]: I use "very little" here since there are researchers working to expose and oppose injustice.
-[^sword]: Matthew 10:34
