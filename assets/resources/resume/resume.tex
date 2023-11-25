@@ -24,7 +24,7 @@
   colorlinks = true,
   urlcolor = blue,
   pdfauthor = {\name},
-  pdfkeywords = {mathematics, computer science, modeling, simulation, epidemiology, applied mathematics},
+  pdfkeywords = {mathematics, computer science, modeling, simulation, epidemiology, applied mathematics, google, scale, security, automation},
   pdftitle = {\name: R\'esum\'e},
   pdfsubject = {R\'esum\'e},
   pdfpagemode = UseNone
@@ -79,22 +79,37 @@
 %%%%%%%%%%%%%%%%%%%%
 \section*{Developer Experience}
 \begin{itemize}
-  \item
-  \jobtitle{Software Engineer}
-  \hspace{\fill}{ {Jan 2017 -- \verb!NOW=$(date +"%b %Y")!} }
-  \workplace{Pivotal Software, Inc.}
+\item
+  \jobtitle{Software Engineer, GKE Security}
+  \hspace{\fill} {Aug 2019 -- \verb!NOW=$(date +"%b %Y")!} 
+  \workplace{Google, LLC}
   \begin{itemize}
-  \vspace{.5em}
+    \vspace{.5em}
   \item {\textbf{Highlights:}}
-  \item\quad Developed and maintained continuous-integration infrastructure,
-    including migration of that \\ infrastructure from AWS to GCP
-  \item\quad Expanded scope and improved granularity of security permissions for all cluster operations
-  % \item\quad Parallelized \verb!precheckin! testing suite, reducing execution time $\sim$3 hours to $\sim$45 minutes
-  \item\quad Redesigned and rewrote GemFire's \ttt{gradle} build to respect modularity,
-    with focus on build\\ parallelization and incrementalization,
-    clean delineation of code ownership and testing boundaries between supporting projects,
-    and maintaining artifact expectation for downstream projects.
+  \item\quad Design and deliver log sanitization efforts at runtime and at test-time.
+    \item Lead development of https://github.com/google/go-flow-levee and its adoption into open-source Kubernetes at test-time.  See KEP-1993 and related KEP-1753.  This work uniquely identified CVE-2020-8565 and supported several other logging issues found.
+    \item Develop runtime log sanitization package, propagate usage through GKE, and automate enforcement of this package's consumption. 
+    \end{itemize}
+  \item\quad Design and deliver iptables-based network security policies for control plane VMs.
+  \item\quad Introduce, improve, and refine tooling related to developer toil involved in security event response.
+  \item\quad Develop security-posture scanning for Kubernetes-related YAML.  Automate scanning within GKE and onboard partner teams to scan at test-time, driving security posture improvements.
   \end{itemize}
+\item
+  \jobtitle{Software Engineer}
+  \hspace{\fill}{Jan 2017 -- Jun 2019}
+    \workplace{Pivotal Software, Inc.}
+    \begin{itemize}
+      \vspace{.5em}
+    \item {\textbf{Highlights:}}
+    \item\quad Developed and maintained continuous-integration infrastructure,
+      including migration of that \\ infrastructure from AWS to GCP
+    \item\quad Expanded scope and improved granularity of security permissions for all cluster operations
+    \item\quad Parallelized \verb!precheckin! testing suite, reducing execution time $\sim$3 hours to $\sim$45 minutes
+    \item\quad Redesigned and rewrote GemFire's \ttt{gradle} build to respect modularity,
+      with focus on build\\ parallelization and incrementalization,
+      clean delineation of code ownership and testing boundaries between supporting projects,
+      and maintaining artifact expectation for downstream projects.
+    \end{itemize}
 \end{itemize}
 
 \subsection*{A previous life as an academic}
