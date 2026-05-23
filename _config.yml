@@ -15,26 +15,37 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
-remote_theme: jekyll/minima
+remote_theme: "jekyll/minima@1e8a445"
 
 # Minima config
 # See https://github.com/jekyll/minima/blob/master/_config.yml
+# and https://github.com/pages-themes/midnight#customizing
 title: 𝄆 Cursive 𝄇
 author:
   name: Patrick Rhomberg
-#  email: root &> patrhom.com
-description: A rambling rigmarole.
+  email: contact &> patrhom.com
+description: A rambling rigmarole
 #baseurl: "/site"
 #url: "https://purelyapplied.github.io/"
 
 minima:
-  date_format: "%Y-%m-%d"
-  social_links:
-    twitter: PurelyApplied
-    github: PurelyApplied
-    linkedin: patrick-rhomberg-9730249b
   # skin options: classic, dark, solarized, solarized-dark
   skin: solarized
+  date_format: "%Y-%m-%d"
+  show_excerpts: true
+  hide_site_feed_link: false
+  social_links:
+    - title: GitHub
+      icon: github
+      url: https://github.com/PurelyApplied
+    - title: BSky
+      icon: bluesky
+#      icon: ghost
+      url: https://bsky.app/profile/purelyapplied.bsky.social
+    - title: LinkedIn
+      icon: linkedin
+#      icon: poo
+      url: https://linkedin.com/in/patrick🤖-rhomberg-9730249b/
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
